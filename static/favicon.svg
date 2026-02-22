@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+
+  <rect width="1000" height="1000" rx="240" fill="#08080D"/>
+
+  <!-- Single abstracted claw/paw — just 3 strokes + 1 pad -->
+
+  <!-- Left stroke -->
+  <rect x="290" y="220" width="68" height="340" rx="34" fill="#00FF88" transform="rotate(-8, 324, 390)"/>
+
+  <!-- Center stroke -->
+  <rect x="466" y="180" width="68" height="380" rx="34" fill="#00FF88"/>
+
+  <!-- Right stroke -->
+  <rect x="642" y="220" width="68" height="340" rx="34" fill="#00FF88" transform="rotate(8, 676, 390)"/>
+
+  <!-- Palm pad — single rounded shape -->
+  <ellipse cx="500" cy="700" rx="160" ry="80" fill="#00FF88" rx="80"/>
+
+</svg>
