@@ -102,9 +102,9 @@
             <!-- Others combined -->
             <div class="flex items-center gap-2 p-2 bg-bg-secondary rounded-lg">
               <div class="flex -space-x-1">
-                <span class="text-sm">🦊</span>
-                <span class="text-sm">👻</span>
-                <span class="text-sm">🪐</span>
+                <div class="w-5 h-5 rounded-full bg-[#F6851B]/30 flex items-center justify-center text-[8px] font-bold text-[#F6851B]">M</div>
+                <div class="w-5 h-5 rounded-full bg-[#AB9FF2]/30 flex items-center justify-center text-[8px] font-bold text-[#AB9FF2]">P</div>
+                <div class="w-5 h-5 rounded-full bg-[#00D18C]/30 flex items-center justify-center text-[8px] font-bold text-[#00D18C]">J</div>
               </div>
               <div class="flex-1">
                 <p class="text-text-muted text-xs">Others</p>
@@ -147,24 +147,24 @@
             </th>
             <th class="py-4 px-4">
               <div class="flex flex-col items-center gap-2">
-                <div class="w-12 h-12 rounded-xl bg-[#F6851B]/20 flex items-center justify-center text-xl">
-                  🦊
+                <div class="w-12 h-12 rounded-xl bg-[#F6851B]/20 flex items-center justify-center text-lg font-bold text-[#F6851B]">
+                  M
                 </div>
                 <span class="text-text-secondary font-medium">MetaMask</span>
               </div>
             </th>
             <th class="py-4 px-4">
               <div class="flex flex-col items-center gap-2">
-                <div class="w-12 h-12 rounded-xl bg-[#AB9FF2]/20 flex items-center justify-center text-xl">
-                  👻
+                <div class="w-12 h-12 rounded-xl bg-[#AB9FF2]/20 flex items-center justify-center text-lg font-bold text-[#AB9FF2]">
+                  P
                 </div>
                 <span class="text-text-secondary font-medium">Phantom</span>
               </div>
             </th>
             <th class="py-4 px-4">
               <div class="flex flex-col items-center gap-2">
-                <div class="w-12 h-12 rounded-xl bg-[#00D18C]/20 flex items-center justify-center text-xl">
-                  🪐
+                <div class="w-12 h-12 rounded-xl bg-[#00D18C]/20 flex items-center justify-center text-lg font-bold text-[#00D18C]">
+                  J
                 </div>
                 <span class="text-text-secondary font-medium">Jupiter</span>
               </div>

@@ -21,7 +21,8 @@
       quote: "finally, a crypto app that doesn't make me feel like i need a CS degree. just told it to swap my SOL and boom, done.",
       author: "cryptopunk.sol",
       role: "DeFi Degen",
-      avatar: "🦊",
+      initials: "CP",
+      color: "from-violet-500 to-purple-600",
       rating: 5,
       highlight: true,
       metric: { value: '$847', label: 'saved in fees', icon: DollarSign }
@@ -30,7 +31,8 @@
       quote: "been using clawpal for 2 months. saved me probably $200 in fees from better routing alone. the natural language stuff is chef's kiss.",
       author: "wagmi_andy",
       role: "NFT Collector",
-      avatar: "🐸",
+      initials: "WA",
+      color: "from-cyan-500 to-blue-600",
       rating: 5,
       metric: { value: '2 months', label: 'active user', icon: Clock }
     },
@@ -38,7 +40,8 @@
       quote: "i was skeptical at first but holy shit this actually works. asked it to 'ape into bonk with 10 sol' and it understood perfectly.",
       author: "crypto_maxi",
       role: "Trader",
-      avatar: "🚀",
+      initials: "CM",
+      color: "from-orange-500 to-red-600",
       rating: 5,
       metric: { value: '342', label: 'trades executed', icon: TrendingUp }
     },
@@ -46,7 +49,8 @@
       quote: "the fact that it's non-custodial is huge for me. my keys stay with me, but i still get this sick UX. best of both worlds fr.",
       author: "defi_sarah",
       role: "Protocol Dev",
-      avatar: "👩‍💻",
+      initials: "DS",
+      color: "from-emerald-500 to-teal-600",
       rating: 5,
       metric: { value: '$12K+', label: 'volume traded', icon: DollarSign }
     },
@@ -54,7 +58,8 @@
       quote: "showed this to my normie friends and they actually understood how to use it. that's never happened with any other crypto app.",
       author: "based_builder",
       role: "Founder",
-      avatar: "🏗️",
+      initials: "BB",
+      color: "from-pink-500 to-rose-600",
       rating: 5,
       metric: { value: '5', label: 'friends onboarded', icon: TrendingUp }
     },
@@ -62,7 +67,8 @@
       quote: "portfolio tracking + swaps + sends all in one chat interface? yeah this is the future. no more juggling 5 different apps.",
       author: "alpha_hunter",
       role: "Full-time Trader",
-      avatar: "🎯",
+      initials: "AH",
+      color: "from-amber-500 to-yellow-600",
       rating: 5,
       metric: { value: '4hrs', label: 'saved per week', icon: Clock }
     }
@@ -157,8 +163,8 @@
           <!-- Author -->
           <div class="flex items-center justify-between">
             <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-bg-secondary flex items-center justify-center text-lg">
-                {testimonial.avatar}
+              <div class="w-10 h-10 rounded-full bg-gradient-to-br {testimonial.color} flex items-center justify-center text-white text-xs font-bold">
+                {testimonial.initials}
               </div>
               <div>
                 <p class="text-text-primary font-medium text-sm">{testimonial.author}</p>
