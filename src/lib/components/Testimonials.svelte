@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import { Quote, Star, Twitter } from 'lucide-svelte';
+  import { Quote, Star, Twitter, TrendingUp, DollarSign, Clock } from 'lucide-svelte';
 
   let visible = $state(false);
 
@@ -23,49 +23,56 @@
       role: "DeFi Degen",
       avatar: "🦊",
       rating: 5,
-      highlight: true
+      highlight: true,
+      metric: { value: '$847', label: 'saved in fees', icon: DollarSign }
     },
     {
       quote: "been using clawpal for 2 months. saved me probably $200 in fees from better routing alone. the natural language stuff is chef's kiss.",
       author: "wagmi_andy",
       role: "NFT Collector",
       avatar: "🐸",
-      rating: 5
+      rating: 5,
+      metric: { value: '2 months', label: 'active user', icon: Clock }
     },
     {
       quote: "i was skeptical at first but holy shit this actually works. asked it to 'ape into bonk with 10 sol' and it understood perfectly.",
       author: "crypto_maxi",
       role: "Trader",
       avatar: "🚀",
-      rating: 5
+      rating: 5,
+      metric: { value: '342', label: 'trades executed', icon: TrendingUp }
     },
     {
       quote: "the fact that it's non-custodial is huge for me. my keys stay with me, but i still get this sick UX. best of both worlds fr.",
       author: "defi_sarah",
       role: "Protocol Dev",
       avatar: "👩‍💻",
-      rating: 5
+      rating: 5,
+      metric: { value: '$12K+', label: 'volume traded', icon: DollarSign }
     },
     {
       quote: "showed this to my normie friends and they actually understood how to use it. that's never happened with any other crypto app.",
       author: "based_builder",
       role: "Founder",
       avatar: "🏗️",
-      rating: 5
+      rating: 5,
+      metric: { value: '5', label: 'friends onboarded', icon: TrendingUp }
     },
     {
       quote: "portfolio tracking + swaps + sends all in one chat interface? yeah this is the future. no more juggling 5 different apps.",
       author: "alpha_hunter",
       role: "Full-time Trader",
       avatar: "🎯",
-      rating: 5
+      rating: 5,
+      metric: { value: '4hrs', label: 'saved per week', icon: Clock }
     }
   ];
 
   const stats = [
     { value: '4.9', label: 'avg rating', suffix: '/5' },
     { value: '10K', label: 'active users', suffix: '+' },
-    { value: '98', label: 'would recommend', suffix: '%' }
+    { value: '98', label: 'would recommend', suffix: '%' },
+    { value: '$2.1M', label: 'fees saved', suffix: '' }
   ];
 </script>
 
@@ -83,25 +90,25 @@
       >
         <div class="inline-flex items-center gap-2 px-4 py-2 bg-accent-warning/10 border border-accent-warning/20 rounded-full mb-6">
           <Star size={16} class="text-accent-warning fill-accent-warning" />
-          <span class="text-accent-warning text-sm font-medium">loved by degens</span>
+          <span class="text-accent-warning text-sm font-medium">Loved by Degens</span>
         </div>
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-text-primary mb-4">
-          don't just take <span class="gradient-text-warm">our word</span> for it
+          Real Results from <span class="gradient-text-warm">Real Users</span>
         </h2>
         <p class="text-text-secondary text-lg">
-          here's what the crypto fam is saying about clawpal
+          Here's what the crypto fam is saying (and saving) with ClawPal
         </p>
       </div>
     </div>
 
     <!-- Stats bar -->
     <div
-      class="flex justify-center gap-12 mb-16 opacity-0"
+      class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16 opacity-0"
       class:animate-fade-in-up={visible}
       style="animation-delay: 0.1s"
     >
       {#each stats as stat}
-        <div class="text-center">
+        <div class="text-center p-4 bg-bg-card/50 border border-border rounded-xl">
           <p class="text-3xl md:text-4xl font-bold text-text-primary">
             {stat.value}<span class="text-accent-primary">{stat.suffix}</span>
           </p>
@@ -134,9 +141,18 @@
           </div>
 
           <!-- Quote -->
-          <p class="text-text-primary leading-relaxed mb-6">
+          <p class="text-text-primary leading-relaxed mb-4">
             "{testimonial.quote}"
           </p>
+
+          <!-- Metric badge -->
+          {#if testimonial.metric}
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-accent-primary/10 border border-accent-primary/20 rounded-full mb-4">
+              <testimonial.metric.icon size={14} class="text-accent-primary" />
+              <span class="text-accent-primary font-bold text-sm">{testimonial.metric.value}</span>
+              <span class="text-text-muted text-xs">{testimonial.metric.label}</span>
+            </div>
+          {/if}
 
           <!-- Author -->
           <div class="flex items-center justify-between">
@@ -161,22 +177,33 @@
       {/each}
     </div>
 
-    <!-- CTA -->
+    <!-- Video testimonial teaser -->
     <div
-      class="text-center mt-12 opacity-0"
+      class="mt-12 p-6 bg-bg-card border border-border rounded-2xl opacity-0"
       class:animate-fade-in-up={visible}
       style="animation-delay: 0.4s"
     >
-      <p class="text-text-muted text-sm mb-4">
-        join 10,000+ degens who are already using clawpal
-      </p>
-      <a
-        href="#waitlist"
-        class="inline-flex items-center gap-2 text-accent-primary hover:underline"
-      >
-        <span>get early access</span>
-        <span>→</span>
-      </a>
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-4">
+          <div class="flex -space-x-3">
+            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-violet-500 to-purple-600 flex items-center justify-center text-white font-bold border-2 border-bg-card">A</div>
+            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center text-white font-bold border-2 border-bg-card">S</div>
+            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center text-white font-bold border-2 border-bg-card">M</div>
+            <div class="w-12 h-12 rounded-full bg-bg-secondary flex items-center justify-center text-text-secondary font-bold border-2 border-bg-card">+97</div>
+          </div>
+          <div>
+            <p class="text-text-primary font-medium">Join 10,000+ happy users</p>
+            <p class="text-text-muted text-sm">Average savings: $127/month</p>
+          </div>
+        </div>
+        <a
+          href="#waitlist"
+          class="inline-flex items-center gap-2 px-6 py-3 bg-accent-primary text-bg-primary font-semibold rounded-xl hover:opacity-90 transition-opacity"
+        >
+          Get Early Access
+          <span>→</span>
+        </a>
+      </div>
     </div>
 
   </div>

@@ -1,5 +1,12 @@
 <script lang="ts">
+  import { Twitter } from 'lucide-svelte';
+
   const year = new Date().getFullYear();
+
+  // Social media links - update with actual URLs
+  const socials = {
+    x: 'https://x.com/clawpal' // Update with actual X handle
+  };
 </script>
 
 <footer class="py-16 border-t border-border relative overflow-hidden">
@@ -68,8 +75,15 @@
       <div class="flex items-center gap-6">
         <a href="/privacy" class="text-text-muted text-sm hover:text-accent-primary transition-colors">privacy</a>
         <a href="/terms" class="text-text-muted text-sm hover:text-accent-primary transition-colors">terms</a>
-        <a href="#" class="text-text-muted text-sm hover:text-accent-primary transition-colors">twitter</a>
-        <a href="#" class="text-text-muted text-sm hover:text-accent-primary transition-colors">discord</a>
+        <a
+          href={socials.x}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center justify-center w-10 h-10 bg-bg-card border border-border rounded-xl text-text-muted hover:text-text-primary hover:border-accent-primary hover:bg-accent-primary/10 transition-all group"
+          aria-label="Follow us on X"
+        >
+          <Twitter size={18} class="group-hover:scale-110 transition-transform" />
+        </a>
       </div>
     </div>
 

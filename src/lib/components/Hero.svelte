@@ -1,57 +1,53 @@
 <script lang="ts">
   import { ArrowRight, Shield, Zap, TrendingUp, Wallet, Check } from 'lucide-svelte';
   import { onMount } from 'svelte';
+  import { HERO_STATS, INTEGRATIONS } from '$lib/constants';
 
   let visible = $state(false);
   let typedText = $state('');
-  let currentStep = $state(0);
-
-  const commands = [
-    { input: 'swap 50 sol to usdc', delay: 80 },
-  ];
-
-  const fullText = commands[0].input;
   let typingComplete = $state(false);
   let showConfirm = $state(false);
 
-  // Animated counter
+  // Animated counters
   let volumeCount = $state(0);
   let usersCount = $state(0);
+
+  const swapCommand = 'swap 50 sol to usdc';
 
   onMount(() => {
     visible = true;
 
     // Typing animation
-    let i = 0;
+    let charIndex = 0;
     const typeInterval = setInterval(() => {
-      if (i < fullText.length) {
-        typedText = fullText.slice(0, i + 1);
-        i++;
+      if (charIndex < swapCommand.length) {
+        typedText = swapCommand.slice(0, charIndex + 1);
+        charIndex++;
       } else {
         clearInterval(typeInterval);
         typingComplete = true;
         setTimeout(() => {
           showConfirm = true;
-        }, 1500);
+        }, HERO_STATS.CONFIRM_DELAY_MS);
       }
-    }, 80);
+    }, HERO_STATS.TYPING_SPEED_MS);
 
     // Animated counters
     const volumeInterval = setInterval(() => {
-      if (volumeCount < 47) {
+      if (volumeCount < HERO_STATS.VOLUME_TARGET) {
         volumeCount += 1;
       } else {
         clearInterval(volumeInterval);
       }
-    }, 50);
+    }, HERO_STATS.VOLUME_INCREMENT_MS);
 
     const usersInterval = setInterval(() => {
-      if (usersCount < 10) {
+      if (usersCount < HERO_STATS.USERS_TARGET) {
         usersCount += 1;
       } else {
         clearInterval(usersInterval);
       }
-    }, 100);
+    }, HERO_STATS.USERS_INCREMENT_MS);
 
     return () => {
       clearInterval(typeInterval);
@@ -59,13 +55,6 @@
       clearInterval(usersInterval);
     };
   });
-
-  const integrations = [
-    { name: 'Jupiter', color: '#00D18C' },
-    { name: 'Raydium', color: '#5AC4BE' },
-    { name: 'Orca', color: '#FFD15C' },
-    { name: 'Phantom', color: '#AB9FF2' },
-  ];
 </script>
 
 <section class="relative min-h-screen flex flex-col justify-center pt-20 pb-12 overflow-hidden">
@@ -167,12 +156,19 @@
         class:animate-slide-in-right={visible}
         style="animation-delay: 0.4s"
       >
-        <!-- Terminal window -->
-        <div class="relative">
+        <!-- Terminal window - clickable to try demo -->
+        <a href="#demo" class="block relative group cursor-pointer">
           <!-- Glow effect behind terminal -->
           <div class="absolute -inset-4 bg-gradient-to-r from-accent-primary/20 to-accent-secondary/20 rounded-3xl blur-2xl opacity-60"></div>
 
-          <div class="relative bg-bg-card border border-border rounded-2xl overflow-hidden shadow-2xl">
+          <div class="relative bg-bg-card border border-border rounded-2xl overflow-hidden shadow-2xl group-hover:border-accent-primary/50 transition-all duration-300">
+            <!-- Try it overlay (shown on hover) -->
+            <div class="absolute inset-0 bg-accent-primary/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity z-20 pointer-events-none">
+              <div class="px-6 py-3 bg-accent-primary text-bg-primary font-bold rounded-xl flex items-center gap-2 shadow-xl">
+                <Zap size={18} />
+                Click to Try Demo
+              </div>
+            </div>
             <!-- Terminal header -->
             <div class="flex items-center justify-between px-4 py-3 border-b border-border bg-bg-secondary/50">
               <div class="flex items-center gap-2">
@@ -263,18 +259,18 @@
               {/if}
             </div>
           </div>
-        </div>
+        </a>
 
         <!-- Integration badges -->
         <div class="flex items-center justify-center gap-3 mt-6">
           <span class="text-text-muted text-xs">powered by:</span>
           <div class="flex items-center gap-2">
-            {#each integrations as int}
+            {#each INTEGRATIONS as integration}
               <div
                 class="px-2 py-1 bg-bg-card/60 border border-border/50 rounded-md text-xs text-text-secondary hover:border-border transition-colors"
-                style="--int-color: {int.color}"
+                style="--int-color: {integration.color}"
               >
-                {int.name}
+                {integration.name}
               </div>
             {/each}
           </div>
