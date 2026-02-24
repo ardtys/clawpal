@@ -11,7 +11,6 @@
   import Footer from '$lib/components/Footer.svelte';
 
   // New conversion-focused components
-  import UrgencyBanner from '$lib/components/UrgencyBanner.svelte';
   import LiveActivityFeed from '$lib/components/LiveActivityFeed.svelte';
   import SecuritySection from '$lib/components/SecuritySection.svelte';
   import ROICalculator from '$lib/components/ROICalculator.svelte';
@@ -28,9 +27,6 @@
   <meta property="og:description" content="Your AI-powered crypto bestie. Swap, send, and manage crypto with natural language." />
   <meta property="og:type" content="website" />
 </svelte:head>
-
-<!-- Urgency Banner (Fixed at top) -->
-<UrgencyBanner />
 
 <!-- Live Activity Notifications -->
 <LiveActivityFeed />

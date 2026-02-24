@@ -71,13 +71,64 @@
       </div>
     </div>
 
-    <!-- Comparison Table -->
+    <!-- Mobile: Card Layout -->
     <div
-      class="overflow-x-auto opacity-0"
+      class="lg:hidden space-y-4 opacity-0"
       class:animate-fade-in-up={visible}
       style="animation-delay: 0.1s"
     >
-      <table class="w-full min-w-[700px]">
+      {#each features as feature}
+        <div class="bg-bg-card border border-border rounded-xl p-4">
+          <p class="text-text-primary font-medium mb-3">{feature.name}</p>
+          <div class="grid grid-cols-2 gap-3">
+            <!-- ClawPal -->
+            <div class="flex items-center gap-2 p-2 bg-accent-primary/10 rounded-lg">
+              <div class="w-6 h-6 rounded bg-gradient-to-br from-accent-primary to-accent-secondary flex items-center justify-center">
+                <Zap size={12} class="text-white" />
+              </div>
+              <div class="flex-1 min-w-0">
+                <p class="text-text-muted text-xs">ClawPal</p>
+                {#if typeof feature.clawpal === 'boolean'}
+                  {#if feature.clawpal}
+                    <Check size={16} class="text-accent-primary" />
+                  {:else}
+                    <X size={16} class="text-red-400" />
+                  {/if}
+                {:else}
+                  <p class="text-accent-primary text-xs font-medium truncate">{feature.clawpal}</p>
+                {/if}
+              </div>
+            </div>
+            <!-- Others combined -->
+            <div class="flex items-center gap-2 p-2 bg-bg-secondary rounded-lg">
+              <div class="flex -space-x-1">
+                <span class="text-sm">🦊</span>
+                <span class="text-sm">👻</span>
+                <span class="text-sm">🪐</span>
+              </div>
+              <div class="flex-1">
+                <p class="text-text-muted text-xs">Others</p>
+                <div class="flex items-center gap-1">
+                  {#if typeof feature.metamask === 'boolean'}
+                    {#if feature.metamask}<Check size={12} class="text-accent-primary" />{:else}<X size={12} class="text-red-400" />{/if}
+                  {:else}
+                    <span class="text-text-muted text-xs">~</span>
+                  {/if}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {/each}
+    </div>
+
+    <!-- Desktop: Table Layout -->
+    <div
+      class="hidden lg:block overflow-x-auto opacity-0"
+      class:animate-fade-in-up={visible}
+      style="animation-delay: 0.1s"
+    >
+      <table class="w-full">
         <thead>
           <tr class="border-b border-border">
             <th class="text-left py-4 px-4 text-text-muted font-medium">Feature</th>

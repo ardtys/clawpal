@@ -189,6 +189,14 @@
       {/each}
     </div>
 
+    <!-- Mobile suggestions (above chat) -->
+    <div class="lg:hidden">
+      <SuggestionSidebar
+        {visible}
+        onSuggestionClick={handleSuggestionClick}
+      />
+    </div>
+
     <!-- Chat container -->
     <div
       class="grid lg:grid-cols-12 gap-8 opacity-0"
@@ -239,7 +247,7 @@
             </div>
 
             <!-- Messages -->
-            <div bind:this={chatEl} class="h-[500px] overflow-y-auto p-5 space-y-4">
+            <div bind:this={chatEl} class="h-[350px] sm:h-[400px] lg:h-[500px] overflow-y-auto p-4 sm:p-5 space-y-4">
               {#each messages as msg (msg.id)}
                 <div class="flex {msg.role === 'user' ? 'justify-end' : 'justify-start'} animate-fade-in-up">
                   <div class="max-w-[90%]">
@@ -361,11 +369,13 @@
         </div>
       </div>
 
-      <!-- Sidebar -->
-      <SuggestionSidebar
-        {visible}
-        onSuggestionClick={handleSuggestionClick}
-      />
+      <!-- Desktop Sidebar -->
+      <div class="hidden lg:block lg:col-span-4">
+        <SuggestionSidebar
+          {visible}
+          onSuggestionClick={handleSuggestionClick}
+        />
+      </div>
 
     </div>
   </div>

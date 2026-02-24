@@ -32,7 +32,32 @@
   };
 </script>
 
-<div class="lg:col-span-4 space-y-6">
+<!-- Mobile: Horizontal scroll suggestions -->
+<div
+  class="lg:hidden mb-6 opacity-0"
+  class:animate-fade-in-up={visible}
+  style="animation-delay: 0.3s"
+>
+  <p class="text-text-primary font-semibold mb-3 flex items-center gap-2 text-sm">
+    <Sparkles size={14} class="text-accent-secondary" />
+    Try These Commands
+  </p>
+  <div class="flex gap-2 overflow-x-auto pb-2 -mx-4 px-4 scrollbar-hide">
+    {#each CHAT_SUGGESTIONS.slice(0, 6) as suggestion}
+      {@const IconComponent = iconMap[suggestion.category] || Wallet}
+      <button
+        onclick={() => onSuggestionClick(suggestion.text)}
+        class="flex-shrink-0 flex items-center gap-2 px-3 py-2 bg-bg-card border border-border rounded-xl text-left hover:border-accent-primary/50 transition-all"
+      >
+        <IconComponent size={14} class="text-text-muted" />
+        <span class="text-text-secondary text-xs whitespace-nowrap">"{suggestion.text}"</span>
+      </button>
+    {/each}
+  </div>
+</div>
+
+<!-- Desktop: Sidebar -->
+<div class="hidden lg:block space-y-6">
   <!-- Quick suggestions -->
   <div
     class="opacity-0"

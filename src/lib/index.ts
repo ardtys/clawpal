@@ -13,7 +13,6 @@ export { default as Waitlist } from './components/Waitlist.svelte';
 export { default as Footer } from './components/Footer.svelte';
 
 // Conversion-focused components
-export { default as UrgencyBanner } from './components/UrgencyBanner.svelte';
 export { default as LiveActivityFeed } from './components/LiveActivityFeed.svelte';
 export { default as SecuritySection } from './components/SecuritySection.svelte';
 export { default as ROICalculator } from './components/ROICalculator.svelte';

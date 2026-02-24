@@ -87,10 +87,11 @@
           <!-- Monthly Volume Slider -->
           <div class="mb-8">
             <div class="flex items-center justify-between mb-3">
-              <label class="text-text-secondary text-sm">Monthly Trading Volume</label>
+              <label for="monthly-volume" class="text-text-secondary text-sm">Monthly Trading Volume</label>
               <span class="text-accent-primary font-bold">{formatCurrency(monthlyVolume)}</span>
             </div>
             <input
+              id="monthly-volume"
               type="range"
               bind:value={monthlyVolume}
               min="1000"
@@ -107,10 +108,11 @@
           <!-- Trades Per Month Slider -->
           <div class="mb-8">
             <div class="flex items-center justify-between mb-3">
-              <label class="text-text-secondary text-sm">Trades Per Month</label>
+              <label for="trades-per-month" class="text-text-secondary text-sm">Trades Per Month</label>
               <span class="text-accent-primary font-bold">{tradesPerMonth} trades</span>
             </div>
             <input
+              id="trades-per-month"
               type="range"
               bind:value={tradesPerMonth}
               min="5"
