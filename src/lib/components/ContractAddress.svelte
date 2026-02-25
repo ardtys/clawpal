@@ -6,9 +6,9 @@
   let visible = $state(false);
   let copied = $state(false);
 
-  // Placeholder CA - replace with actual contract address
-  const contractAddress = 'COMING_SOON_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
-  const isPlaceholder = true;
+  // Official Contract Address
+  const contractAddress = 'FHRp2A1j6f4niWBhUahT4rRUbocqryaJJKcg2766pump';
+  const isPlaceholder = false;
 
   async function copyCA() {
     if (isPlaceholder) return;
