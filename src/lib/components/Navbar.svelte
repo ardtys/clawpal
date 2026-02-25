@@ -11,8 +11,8 @@
       <!-- Logo -->
       <a href="/" class="flex items-center gap-2 group">
         <img
-          src="/palclaw-logo.png"
-          alt="ClawPal Logo"
+          src="/clawpal-logo.png"
+          alt="Pal Claw Logo"
           class="w-8 h-8 rounded-lg group-hover:scale-105 transition-transform"
         />
         <span class="font-bold text-text-primary group-hover:text-accent-primary transition-colors">palclaw</span>

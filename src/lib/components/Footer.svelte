@@ -21,8 +21,8 @@
       <div class="md:col-span-1">
         <a href="/" class="flex items-center gap-2 mb-4 group">
           <img
-            src="/palclaw-logo.png"
-            alt="ClawPal Logo"
+            src="/clawpal-logo.png"
+            alt="Pal Claw Logo"
             class="w-9 h-9 rounded-lg group-hover:scale-105 transition-transform"
           />
           <span class="font-bold text-text-primary group-hover:text-accent-primary transition-colors">palclaw</span>
