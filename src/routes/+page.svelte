@@ -19,7 +19,6 @@
   import ContractAddress from '$lib/components/ContractAddress.svelte';
 
   // Real-time interactive components
-  import LivePriceTicker from '$lib/components/LivePriceTicker.svelte';
   import SwapCalculator from '$lib/components/SwapCalculator.svelte';
   import WalletLookup from '$lib/components/WalletLookup.svelte';
 </script>
@@ -40,9 +39,6 @@
 <ExitIntentPopup />
 
 <Navbar />
-
-<!-- Live Price Ticker -->
-<LivePriceTicker />
 
 <main>
   <!-- Hero Section -->
