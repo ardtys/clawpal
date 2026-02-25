@@ -3,9 +3,8 @@
 
   const year = new Date().getFullYear();
 
-  // Social media links - update with actual URLs
   const socials = {
-    x: 'https://x.com/palclaw' // Update with actual X handle
+    x: 'https://x.com/PalClaw'
   };
 </script>
 

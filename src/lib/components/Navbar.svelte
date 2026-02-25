@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Menu, X } from 'lucide-svelte';
+  import { Menu, X, Twitter } from 'lucide-svelte';
 
   let mobileOpen = $state(false);
 </script>
@@ -27,7 +27,16 @@
       </div>
 
       <!-- CTA -->
-      <div class="hidden md:block">
+      <div class="hidden md:flex items-center gap-3">
+        <a
+          href="https://x.com/PalClaw"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="p-2 text-text-secondary hover:text-accent-primary transition-colors"
+          aria-label="Follow us on X"
+        >
+          <Twitter size={18} />
+        </a>
         <a
           href="/#waitlist"
           class="inline-flex items-center gap-2 bg-accent-primary text-bg-primary text-sm font-medium px-4 py-2 rounded-lg btn-glow hover:opacity-90 transition-all"
@@ -59,6 +68,15 @@
         <a href="/#demo" onclick={() => mobileOpen = false} class="block text-text-secondary hover:text-text-primary transition-colors">demo</a>
         <a href="/#pricing" onclick={() => mobileOpen = false} class="block text-text-secondary hover:text-text-primary transition-colors">pricing</a>
         <a href="/docs" onclick={() => mobileOpen = false} class="block text-text-secondary hover:text-text-primary transition-colors">docs</a>
+        <a
+          href="https://x.com/PalClaw"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center gap-2 text-text-secondary hover:text-accent-primary transition-colors"
+        >
+          <Twitter size={18} />
+          <span>follow on x</span>
+        </a>
         <div class="pt-3">
           <a
             href="/#waitlist"
