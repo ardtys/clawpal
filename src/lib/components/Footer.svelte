@@ -5,7 +5,7 @@
 
   // Social media links - update with actual URLs
   const socials = {
-    x: 'https://x.com/clawpal' // Update with actual X handle
+    x: 'https://x.com/palclaw' // Update with actual X handle
   };
 </script>
 
@@ -21,11 +21,11 @@
       <div class="md:col-span-1">
         <a href="/" class="flex items-center gap-2 mb-4 group">
           <img
-            src="/clawpal-logo.png"
+            src="/palclaw-logo.png"
             alt="ClawPal Logo"
             class="w-9 h-9 rounded-lg group-hover:scale-105 transition-transform"
           />
-          <span class="font-bold text-text-primary group-hover:text-accent-primary transition-colors">clawpal</span>
+          <span class="font-bold text-text-primary group-hover:text-accent-primary transition-colors">palclaw</span>
         </a>
         <p class="text-text-muted text-sm leading-relaxed">
           talk to your wallet like it's your friend.
@@ -69,7 +69,7 @@
     <!-- Bottom -->
     <div class="pt-8 border-t border-border flex flex-col sm:flex-row justify-between items-center gap-4">
       <p class="text-text-muted text-sm">
-        © {year} clawpal. <span class="text-accent-primary">built for degens.</span>
+        © {year} palclaw. <span class="text-accent-primary">built for degens.</span>
       </p>
 
       <div class="flex items-center gap-6">

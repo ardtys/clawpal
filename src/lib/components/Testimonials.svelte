@@ -28,7 +28,7 @@
       metric: { value: '$847', label: 'saved in fees', icon: DollarSign }
     },
     {
-      quote: "been using clawpal for 2 months. saved me probably $200 in fees from better routing alone. the natural language stuff is chef's kiss.",
+      quote: "been using pal claw for 2 months. saved me probably $200 in fees from better routing alone. the natural language stuff is chef's kiss.",
       author: "wagmi_andy",
       role: "NFT Collector",
       initials: "WA",
@@ -102,7 +102,7 @@
           Real Results from <span class="gradient-text-warm">Real Users</span>
         </h2>
         <p class="text-text-secondary text-lg">
-          Here's what the crypto fam is saying (and saving) with ClawPal
+          Here's what the crypto fam is saying (and saving) with Pal Claw
         </p>
       </div>
     </div>

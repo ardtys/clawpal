@@ -17,13 +17,18 @@
   import ComparisonTable from '$lib/components/ComparisonTable.svelte';
   import ExitIntentPopup from '$lib/components/ExitIntentPopup.svelte';
   import ContractAddress from '$lib/components/ContractAddress.svelte';
+
+  // Real-time interactive components
+  import LivePriceTicker from '$lib/components/LivePriceTicker.svelte';
+  import SwapCalculator from '$lib/components/SwapCalculator.svelte';
+  import WalletLookup from '$lib/components/WalletLookup.svelte';
 </script>
 
 <svelte:head>
-  <title>ClawPal – Talk to Your Crypto Wallet | AI-Powered Assistant</title>
-  <meta name="description" content="Swap, send, and manage your crypto by just typing what you want. ClawPal is your AI-powered crypto assistant with natural language commands." />
+  <title>Pal Claw – Talk to Your Crypto Wallet | AI-Powered Assistant</title>
+  <meta name="description" content="Swap, send, and manage your crypto by just typing what you want. Pal Claw is your AI-powered crypto assistant with natural language commands." />
   <meta name="keywords" content="crypto wallet, AI assistant, Solana, DeFi, swap tokens, natural language crypto" />
-  <meta property="og:title" content="ClawPal – Talk to Your Crypto Wallet" />
+  <meta property="og:title" content="Pal Claw – Talk to Your Crypto Wallet" />
   <meta property="og:description" content="Your AI-powered crypto bestie. Swap, send, and manage crypto with natural language." />
   <meta property="og:type" content="website" />
 </svelte:head>
@@ -36,6 +41,9 @@
 
 <Navbar />
 
+<!-- Live Price Ticker -->
+<LivePriceTicker />
+
 <main>
   <!-- Hero Section -->
   <Hero />
@@ -45,6 +53,12 @@
 
   <!-- Interactive Demo -->
   <ChatDemo />
+
+  <!-- Live Swap Calculator -->
+  <SwapCalculator />
+
+  <!-- Wallet Lookup -->
+  <WalletLookup />
 
   <!-- Features Overview -->
   <Features />

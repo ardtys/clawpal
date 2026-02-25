@@ -15,17 +15,17 @@
       title: 'The Quick Version',
       content: `Before the legal stuff, here's what you need to know:
 
-• ClawPal is a tool to interact with blockchains. We don't control the blockchains.
+• Pal Claw is a tool to interact with blockchains. We don't control the blockchains.
 • Crypto is risky. You could lose money. That's on you, not us.
-• Don't use ClawPal for illegal stuff. Seriously.
+• Don't use Pal Claw for illegal stuff. Seriously.
 • We can update these terms and the service at any time.
 • Your keys, your crypto, your responsibility.
 
-By using ClawPal, you agree to these terms. If you don't agree, don't use the service.`
+By using Pal Claw, you agree to these terms. If you don't agree, don't use the service.`
     },
     {
-      title: '1. What ClawPal Is',
-      content: `ClawPal is a natural language interface for interacting with blockchain networks (currently Solana and Base). We help you:
+      title: '1. What Pal Claw Is',
+      content: `Pal Claw is a natural language interface for interacting with blockchain networks (currently Solana and Base). We help you:
 
 • Check balances and portfolio values
 • Execute token swaps through DEX aggregation
@@ -42,18 +42,18 @@ We provide the interface. You make the decisions.`
     },
     {
       title: '2. Eligibility',
-      content: `To use ClawPal, you must:
+      content: `To use Pal Claw, you must:
 
 • Be at least 18 years old (or legal adult age in your jurisdiction)
 • Not be on any sanctions lists or located in a sanctioned country
 • Have the legal capacity to enter into these terms
 • Not have been previously banned from the service
 
-By using ClawPal, you represent and warrant all of the above. If any of these become untrue, you must stop using the service immediately.`
+By using Pal Claw, you represent and warrant all of the above. If any of these become untrue, you must stop using the service immediately.`
     },
     {
       title: '3. Your Responsibilities',
-      content: `When using ClawPal, you agree to:
+      content: `When using Pal Claw, you agree to:
 
 • **Keep your wallet secure**: We never touch your keys, so your wallet security is 100% on you.
 • **Verify before signing**: Always check transaction details before signing. Once it's on-chain, it's done.
@@ -69,13 +69,13 @@ If you mess up, that's on you. We're not your mom.`
 
 **CLAWPAL DOES NOT PROVIDE FINANCIAL, INVESTMENT, TAX, OR LEGAL ADVICE.**
 
-Any information provided through ClawPal is for informational purposes only. It should not be construed as financial advice or a recommendation to buy, sell, or hold any asset.
+Any information provided through Pal Claw is for informational purposes only. It should not be construed as financial advice or a recommendation to buy, sell, or hold any asset.
 
 Do your own research. Consult professionals. We're just a chat interface, not your financial advisor.`
     },
     {
       title: '5. Service Availability',
-      content: `We do our best to keep ClawPal running smoothly, but:
+      content: `We do our best to keep Pal Claw running smoothly, but:
 
 • We don't guarantee 100% uptime
 • We may need to take the service down for maintenance
@@ -86,7 +86,7 @@ We're not liable for any losses due to service unavailability or changes.`
     },
     {
       title: '6. Fees',
-      content: `ClawPal subscription tiers have associated fees as shown on our pricing page. Additionally:
+      content: `Pal Claw subscription tiers have associated fees as shown on our pricing page. Additionally:
 
 • **Blockchain fees**: Network gas/transaction fees are paid by you, not us
 • **DEX fees**: Swaps may have fees from the underlying protocols
@@ -98,7 +98,7 @@ We may update pricing with notice. If you don't agree with new pricing, cancel y
       title: '7. Limitation of Liability',
       content: `TO THE MAXIMUM EXTENT PERMITTED BY LAW:
 
-• ClawPal is provided "as is" without warranties of any kind
+• Pal Claw is provided "as is" without warranties of any kind
 • We are not liable for any indirect, incidental, or consequential damages
 • Our total liability is limited to the amount you paid us in the last 12 months
 • We are not responsible for losses due to user error, market conditions, or blockchain issues
@@ -107,7 +107,7 @@ This isn't us being shady - it's standard for software services, especially in c
     },
     {
       title: '8. Indemnification',
-      content: `You agree to indemnify and hold harmless ClawPal, its team, and affiliates from any claims, damages, or expenses arising from:
+      content: `You agree to indemnify and hold harmless Pal Claw, its team, and affiliates from any claims, damages, or expenses arising from:
 
 • Your use of the service
 • Your violation of these terms
@@ -149,8 +149,8 @@ This is standard stuff - we'd rather work things out than lawyer up.`
       title: '12. Contact',
       content: `Questions about these terms? Reach out:
 
-• Email: legal@clawpal.io
-• Contact page: clawpal.io/contact
+• Email: legal@palclaw.io
+• Contact page: palclaw.io/contact
 
 We'll do our best to respond within a reasonable timeframe.`
     }
@@ -158,8 +158,8 @@ We'll do our best to respond within a reasonable timeframe.`
 </script>
 
 <svelte:head>
-  <title>Terms of Service | ClawPal</title>
-  <meta name="description" content="ClawPal Terms of Service. The rules of engagement for using our service. Written as clearly as legal stuff allows." />
+  <title>Terms of Service | Pal Claw</title>
+  <meta name="description" content="Pal Claw Terms of Service. The rules of engagement for using our service. Written as clearly as legal stuff allows." />
 </svelte:head>
 
 <Navbar />
@@ -202,10 +202,10 @@ We'll do our best to respond within a reasonable timeframe.`
       class:animate-fade-in-up={visible}
       style="animation-delay: 0.4s"
     >
-      <h3 class="font-heading font-semibold text-text-primary mb-2">By Using ClawPal, You Agree to These Terms</h3>
+      <h3 class="font-heading font-semibold text-text-primary mb-2">By Using Pal Claw, You Agree to These Terms</h3>
       <p class="text-text-secondary text-sm">
         If you don't agree, please don't use the service. Questions? Hit up{' '}
-        <a href="mailto:legal@clawpal.io" class="text-accent-primary hover:underline">legal@clawpal.io</a>
+        <a href="mailto:legal@palclaw.io" class="text-accent-primary hover:underline">legal@palclaw.io</a>
       </p>
     </div>
   </div>

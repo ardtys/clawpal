@@ -32,15 +32,15 @@
       icon: Twitter,
       title: 'Twitter',
       description: 'DMs open. Slide in for quick questions or just to say hi.',
-      action: '@clawpal_io',
+      action: '@palclaw_io',
       link: '#'
     },
     {
       icon: Mail,
       title: 'Email',
       description: 'For formal inquiries. We\'ll get back within 24 hours.',
-      action: 'gm@clawpal.io',
-      link: 'mailto:gm@clawpal.io'
+      action: 'gm@palclaw.io',
+      link: 'mailto:gm@palclaw.io'
     }
   ];
 
@@ -55,7 +55,7 @@
 </script>
 
 <svelte:head>
-  <title>Contact Us | ClawPal - Get in Touch</title>
+  <title>Contact Us | Pal Claw - Get in Touch</title>
   <meta name="description" content="Got questions? We got answers. Reach out via Discord, Twitter, or email. We're here to help, fam." />
 </svelte:head>
 
@@ -210,7 +210,7 @@
 
           <div class="space-y-4 mb-6">
             <div class="p-4 rounded-lg bg-bg-secondary">
-              <h4 class="font-semibold text-text-primary mb-1">Is ClawPal safe to use?</h4>
+              <h4 class="font-semibold text-text-primary mb-1">Is Pal Claw safe to use?</h4>
               <p class="text-text-secondary text-sm">100%. We're non-custodial - we never touch your keys.</p>
             </div>
             <div class="p-4 rounded-lg bg-bg-secondary">

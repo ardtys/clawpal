@@ -67,7 +67,7 @@
           How Much Can <span class="gradient-text-warm">You Save</span>?
         </h2>
         <p class="text-text-secondary text-lg">
-          See how much money and time ClawPal can save you every month
+          See how much money and time Pal Claw can save you every month
         </p>
       </div>
     </div>
@@ -129,7 +129,7 @@
           <!-- Info -->
           <div class="p-4 bg-bg-secondary/50 rounded-xl">
             <p class="text-text-muted text-sm">
-              <strong class="text-text-secondary">How we calculate:</strong> ClawPal finds the best routes across 12+ DEXs,
+              <strong class="text-text-secondary">How we calculate:</strong> Pal Claw finds the best routes across 12+ DEXs,
               saving you ~15% on swap fees plus gas optimization.
             </p>
           </div>

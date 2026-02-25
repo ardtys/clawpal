@@ -265,6 +265,6 @@ export function getResponse(text: string): ScenarioResponse {
 export const welcomeMessage = {
   id: 1,
   role: 'bot' as const,
-  text: "Hey! I'm ClawPal, your AI crypto assistant. I can help you swap tokens, check balances, track your portfolio, and more. What would you like to do?",
+  text: "Hey! I'm Pal Claw, your AI crypto assistant. I can help you swap tokens, check balances, track your portfolio, and more. What would you like to do?",
   type: 'text' as MessageType
 };

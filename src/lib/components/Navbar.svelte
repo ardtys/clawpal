@@ -11,11 +11,11 @@
       <!-- Logo -->
       <a href="/" class="flex items-center gap-2 group">
         <img
-          src="/clawpal-logo.png"
+          src="/palclaw-logo.png"
           alt="ClawPal Logo"
           class="w-8 h-8 rounded-lg group-hover:scale-105 transition-transform"
         />
-        <span class="font-bold text-text-primary group-hover:text-accent-primary transition-colors">clawpal</span>
+        <span class="font-bold text-text-primary group-hover:text-accent-primary transition-colors">palclaw</span>
       </a>
 
       <!-- Desktop nav -->

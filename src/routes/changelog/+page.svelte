@@ -116,8 +116,8 @@
 </script>
 
 <svelte:head>
-  <title>Changelog | ClawPal - What's New</title>
-  <meta name="description" content="ClawPal changelog. See what's new, what's improved, and what we fixed. We ship fast and often." />
+  <title>Changelog | Pal Claw - What's New</title>
+  <meta name="description" content="Pal Claw changelog. See what's new, what's improved, and what we fixed. We ship fast and often." />
 </svelte:head>
 
 <Navbar />

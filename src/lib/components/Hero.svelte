@@ -178,7 +178,7 @@
               </div>
               <div class="flex items-center gap-2">
                 <div class="w-2 h-2 bg-accent-primary rounded-full animate-pulse"></div>
-                <span class="text-text-muted text-xs font-mono">clawpal terminal</span>
+                <span class="text-text-muted text-xs font-mono">palclaw terminal</span>
               </div>
               <div class="w-16"></div>
             </div>

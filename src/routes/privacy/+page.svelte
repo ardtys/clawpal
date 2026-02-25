@@ -24,7 +24,7 @@ That's basically it. The rest below is the lawyer-approved version for those who
     },
     {
       title: 'What We Collect',
-      content: `When you use ClawPal, we collect:
+      content: `When you use Pal Claw, we collect:
 
 **Account Information**: Your email address when you sign up. That's how we reach you.
 
@@ -32,7 +32,7 @@ That's basically it. The rest below is the lawyer-approved version for those who
 
 **Usage Data**: What features you use, how often, error logs. This helps us fix bugs and make things better.
 
-**Chat History**: Your conversations with ClawPal. This is encrypted and used to improve our AI. You can delete this anytime.
+**Chat History**: Your conversations with Pal Claw. This is encrypted and used to improve our AI. You can delete this anytime.
 
 **Device Information**: Basic stuff like browser type, device type, IP address. Standard web stuff.
 
@@ -49,7 +49,7 @@ We do NOT collect:
 • **Improve our AI**: Your chat data helps us understand natural language better.
 • **Fix bugs**: Error logs help us squash issues fast.
 • **Send important updates**: Account stuff, security alerts, big announcements.
-• **Analytics**: Understand how people use ClawPal so we can make it better.
+• **Analytics**: Understand how people use Pal Claw so we can make it better.
 
 We don't use your data to:
 • Sell to advertisers
@@ -71,7 +71,7 @@ If we ever have a security incident (knock on wood), we'll notify affected users
     },
     {
       title: 'Third-Party Services',
-      content: `We use some third-party services to run ClawPal:
+      content: `We use some third-party services to run Pal Claw:
 
 • **Cloud Infrastructure**: AWS/GCP for hosting
 • **Analytics**: Privacy-focused analytics (no Google Analytics)
@@ -90,7 +90,7 @@ These providers are vetted and have their own privacy policies. We don't share m
 • **Export**: Get your data in a portable format
 • **Opt-out**: Unsubscribe from marketing emails (but not security alerts)
 
-To exercise these rights, hit us up at privacy@clawpal.io or through our contact page.`
+To exercise these rights, hit us up at privacy@palclaw.io or through our contact page.`
     },
     {
       title: 'Cookies',
@@ -115,8 +115,8 @@ Check back occasionally if you're into that sort of thing.`
 </script>
 
 <svelte:head>
-  <title>Privacy Policy | ClawPal</title>
-  <meta name="description" content="ClawPal Privacy Policy. How we handle your data, what we collect, and your rights. Written in plain English." />
+  <title>Privacy Policy | Pal Claw</title>
+  <meta name="description" content="Pal Claw Privacy Policy. How we handle your data, what we collect, and your rights. Written in plain English." />
 </svelte:head>
 
 <Navbar />
@@ -162,7 +162,7 @@ Check back occasionally if you're into that sort of thing.`
       <h3 class="font-heading font-semibold text-text-primary mb-2">Questions?</h3>
       <p class="text-text-secondary text-sm mb-4">
         If you have any questions about this policy, hit us up at{' '}
-        <a href="mailto:privacy@clawpal.io" class="text-accent-primary hover:underline">privacy@clawpal.io</a>
+        <a href="mailto:privacy@palclaw.io" class="text-accent-primary hover:underline">privacy@palclaw.io</a>
       </p>
     </div>
   </div>

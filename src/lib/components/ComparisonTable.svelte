@@ -60,7 +60,7 @@
       >
         <div class="inline-flex items-center gap-2 px-4 py-2 bg-accent-secondary/10 border border-accent-secondary/20 rounded-full mb-6">
           <Crown size={16} class="text-accent-secondary" />
-          <span class="text-accent-secondary text-sm font-medium">Why ClawPal?</span>
+          <span class="text-accent-secondary text-sm font-medium">Why Pal Claw?</span>
         </div>
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-text-primary mb-4">
           See How We <span class="gradient-text-purple">Compare</span>
@@ -81,13 +81,13 @@
         <div class="bg-bg-card border border-border rounded-xl p-4">
           <p class="text-text-primary font-medium mb-3">{feature.name}</p>
           <div class="grid grid-cols-2 gap-3">
-            <!-- ClawPal -->
+            <!-- Pal Claw -->
             <div class="flex items-center gap-2 p-2 bg-accent-primary/10 rounded-lg">
               <div class="w-6 h-6 rounded bg-gradient-to-br from-accent-primary to-accent-secondary flex items-center justify-center">
                 <Zap size={12} class="text-white" />
               </div>
               <div class="flex-1 min-w-0">
-                <p class="text-text-muted text-xs">ClawPal</p>
+                <p class="text-text-muted text-xs">Pal Claw</p>
                 {#if typeof feature.clawpal === 'boolean'}
                   {#if feature.clawpal}
                     <Check size={16} class="text-accent-primary" />
@@ -142,7 +142,7 @@
                     <Crown size={10} class="text-bg-primary" />
                   </div>
                 </div>
-                <span class="text-text-primary font-bold">ClawPal</span>
+                <span class="text-text-primary font-bold">Pal Claw</span>
               </div>
             </th>
             <th class="py-4 px-4">
@@ -176,7 +176,7 @@
             <tr class="border-b border-border/50 hover:bg-bg-card/50 transition-colors">
               <td class="py-4 px-4 text-text-primary font-medium">{feature.name}</td>
 
-              <!-- ClawPal (highlighted) -->
+              <!-- Pal Claw (highlighted) -->
               <td class="py-4 px-4 bg-accent-primary/5">
                 <div class="flex items-center justify-center gap-2">
                   {#if typeof feature.clawpal === 'boolean'}

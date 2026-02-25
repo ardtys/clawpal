@@ -20,6 +20,11 @@ export { default as ComparisonTable } from './components/ComparisonTable.svelte'
 export { default as ExitIntentPopup } from './components/ExitIntentPopup.svelte';
 export { default as ContractAddress } from './components/ContractAddress.svelte';
 
+// Real-time interactive components
+export { default as LivePriceTicker } from './components/LivePriceTicker.svelte';
+export { default as SwapCalculator } from './components/SwapCalculator.svelte';
+export { default as WalletLookup } from './components/WalletLookup.svelte';
+
 // Chat sub-components
 export * from './components/chat';
 

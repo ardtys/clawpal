@@ -20,28 +20,28 @@
     {
       step: '01',
       title: 'Connect Your Wallet',
-      description: 'Click the "Connect Wallet" button in the top right corner. ClawPal supports Phantom, Backpack, Coinbase Wallet, MetaMask, and all major wallet providers on Solana and Base networks.',
+      description: 'Click the "Connect Wallet" button in the top right corner. Pal Claw supports Phantom, Backpack, Coinbase Wallet, MetaMask, and all major wallet providers on Solana and Base networks.',
       icon: Wallet,
       tips: ['Make sure your wallet extension is installed', 'Approve the connection request in your wallet']
     },
     {
       step: '02',
       title: 'Start a Conversation',
-      description: 'Type your request in natural language. No special commands or syntax required. ClawPal understands context and can handle complex multi-step operations.',
+      description: 'Type your request in natural language. No special commands or syntax required. Pal Claw understands context and can handle complex multi-step operations.',
       icon: MessageSquare,
       tips: ['Be specific about amounts and tokens', 'You can reference previous messages for context']
     },
     {
       step: '03',
       title: 'Review Transaction Details',
-      description: 'Before any transaction executes, ClawPal displays a clear summary showing exactly what will happen: tokens involved, amounts, fees, and estimated outcomes.',
+      description: 'Before any transaction executes, Pal Claw displays a clear summary showing exactly what will happen: tokens involved, amounts, fees, and estimated outcomes.',
       icon: CheckCircle,
       tips: ['Always verify the destination address', 'Check slippage tolerance for swaps']
     },
     {
       step: '04',
       title: 'Confirm and Execute',
-      description: 'Once you approve, your wallet will prompt you to sign the transaction. After signing, ClawPal monitors the transaction and notifies you when it completes.',
+      description: 'Once you approve, your wallet will prompt you to sign the transaction. After signing, Pal Claw monitors the transaction and notifies you when it completes.',
       icon: Zap,
       tips: ['Keep your wallet open during signing', 'Transaction status updates in real-time']
     }
@@ -99,11 +99,11 @@
       id: 'swapping',
       icon: ArrowRightLeft,
       title: 'Token Swapping',
-      description: 'Learn how ClawPal finds the best rates across multiple DEXs and executes swaps with optimal routing.',
+      description: 'Learn how Pal Claw finds the best rates across multiple DEXs and executes swaps with optimal routing.',
       content: [
         {
           subtitle: 'How Swaps Work',
-          text: 'ClawPal aggregates liquidity from Jupiter, Raydium, Orca, and other major DEXs to find you the best possible rate. When you request a swap, we analyze all available routes and present the optimal path.'
+          text: 'Pal Claw aggregates liquidity from Jupiter, Raydium, Orca, and other major DEXs to find you the best possible rate. When you request a swap, we analyze all available routes and present the optimal path.'
         },
         {
           subtitle: 'Slippage Protection',
@@ -111,7 +111,7 @@
         },
         {
           subtitle: 'Price Impact Warnings',
-          text: 'For large trades, ClawPal automatically warns you about potential price impact and may suggest splitting the order into smaller chunks for better execution.'
+          text: 'For large trades, Pal Claw automatically warns you about potential price impact and may suggest splitting the order into smaller chunks for better execution.'
         }
       ]
     },
@@ -123,7 +123,7 @@
       content: [
         {
           subtitle: 'Supported Wallets',
-          text: 'ClawPal works with Phantom, Backpack, Solflare, Coinbase Wallet, MetaMask, Rainbow, and WalletConnect-compatible wallets. Hardware wallets like Ledger are supported through compatible browser extensions.'
+          text: 'Pal Claw works with Phantom, Backpack, Solflare, Coinbase Wallet, MetaMask, Rainbow, and WalletConnect-compatible wallets. Hardware wallets like Ledger are supported through compatible browser extensions.'
         },
         {
           subtitle: 'Multiple Accounts',
@@ -139,11 +139,11 @@
       id: 'security',
       icon: Shield,
       title: 'Security & Safety',
-      description: 'Understand how ClawPal keeps your assets safe with non-custodial design.',
+      description: 'Understand how Pal Claw keeps your assets safe with non-custodial design.',
       content: [
         {
           subtitle: 'Non-Custodial Architecture',
-          text: 'ClawPal never has access to your private keys. All transactions are signed locally in your wallet. We only prepare transaction instructions - you maintain full control.'
+          text: 'Pal Claw never has access to your private keys. All transactions are signed locally in your wallet. We only prepare transaction instructions - you maintain full control.'
         },
         {
           subtitle: 'Transaction Simulation',
@@ -151,7 +151,7 @@
         },
         {
           subtitle: 'Scam Protection',
-          text: 'ClawPal maintains a database of known scam tokens and malicious contracts. We warn you before interacting with suspicious addresses and flag potential honeypots.'
+          text: 'Pal Claw maintains a database of known scam tokens and malicious contracts. We warn you before interacting with suspicious addresses and flag potential honeypots.'
         }
       ]
     },
@@ -171,7 +171,7 @@
         },
         {
           subtitle: 'API Access',
-          text: 'Build your own integrations with ClawPal\'s API. Available on Whale tier with rate limits based on your subscription level.'
+          text: 'Build your own integrations with Pal Claw\'s API. Available on Whale tier with rate limits based on your subscription level.'
         }
       ]
     }
@@ -209,8 +209,8 @@
 </script>
 
 <svelte:head>
-  <title>Documentation | ClawPal - Complete Guide to AI-Powered Crypto Management</title>
-  <meta name="description" content="Comprehensive documentation for ClawPal. Learn how to swap tokens, manage your portfolio, and interact with DeFi using natural language." />
+  <title>Documentation | Pal Claw - Complete Guide to AI-Powered Crypto Management</title>
+  <meta name="description" content="Comprehensive documentation for Pal Claw. Learn how to swap tokens, manage your portfolio, and interact with DeFi using natural language." />
 </svelte:head>
 
 <Navbar />
@@ -224,7 +224,7 @@
       badgeColor="secondary"
       title="Complete "
       highlight="Guide"
-      description="Everything you need to master ClawPal. From basic commands to advanced features, this documentation covers it all."
+      description="Everything you need to master Pal Claw. From basic commands to advanced features, this documentation covers it all."
     />
 
     <!-- Table of Contents -->
@@ -314,7 +314,7 @@
         </div>
         <div>
           <h2 class="font-heading text-2xl font-bold text-text-primary">Chat Commands</h2>
-          <p class="text-text-muted text-sm">Natural language commands ClawPal understands</p>
+          <p class="text-text-muted text-sm">Natural language commands Pal Claw understands</p>
         </div>
       </div>
 
@@ -324,7 +324,7 @@
           <div>
             <p class="text-text-primary font-medium mb-1">Natural Language Understanding</p>
             <p class="text-text-secondary text-sm">
-              ClawPal uses advanced AI to understand your intent. You don't need to memorize exact phrases -
+              Pal Claw uses advanced AI to understand your intent. You don't need to memorize exact phrases -
               just describe what you want to do in plain English. The examples below show common patterns,
               but feel free to phrase things your own way.
             </p>
@@ -367,7 +367,7 @@
         </div>
         <div>
           <h2 class="font-heading text-2xl font-bold text-text-primary">Feature Documentation</h2>
-          <p class="text-text-muted text-sm">In-depth guides for each ClawPal feature</p>
+          <p class="text-text-muted text-sm">In-depth guides for each Pal Claw feature</p>
         </div>
       </div>
 

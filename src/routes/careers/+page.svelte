@@ -72,7 +72,7 @@
       location: 'Remote',
       type: 'Full-time',
       salary: '$80K - $120K + Equity',
-      description: 'Be the voice of ClawPal. Manage Discord, Twitter, support. Know when to meme and when to be serious. Crypto native required.',
+      description: 'Be the voice of Pal Claw. Manage Discord, Twitter, support. Know when to meme and when to be serious. Crypto native required.',
       requirements: ['Crypto community experience', 'Meme fluency', 'Patience of a saint']
     }
   ];
@@ -88,8 +88,8 @@
 </script>
 
 <svelte:head>
-  <title>Careers | ClawPal - Join the Squad</title>
-  <meta name="description" content="Join ClawPal and help us make crypto usable for everyone. Remote-first, competitive pay, and a mission that actually matters." />
+  <title>Careers | Pal Claw - Join the Squad</title>
+  <meta name="description" content="Join Pal Claw and help us make crypto usable for everyone. Remote-first, competitive pay, and a mission that actually matters." />
 </svelte:head>
 
 <Navbar />

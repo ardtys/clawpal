@@ -32,7 +32,7 @@
       icon: Shield,
       title: 'Non-Custodial Security',
       tagline: 'Your keys stay yours. Period.',
-      description: 'We\'re not trying to be another FTX, fam. ClawPal NEVER has access to your private keys. Every single transaction requires YOUR signature from YOUR wallet. We just help you build the transaction - you maintain full control at all times. Sleep easy knowing your bags are safe.',
+      description: 'We\'re not trying to be another FTX, fam. Pal Claw NEVER has access to your private keys. Every single transaction requires YOUR signature from YOUR wallet. We just help you build the transaction - you maintain full control at all times. Sleep easy knowing your bags are safe.',
       color: 'accent-primary',
       features: ['Zero access to private keys', 'Transaction preview before signing', 'Works with hardware wallets', 'Open source verification coming']
     },
@@ -59,8 +59,8 @@
 </script>
 
 <svelte:head>
-  <title>Features | ClawPal - AI-Powered Crypto Wallet</title>
-  <meta name="description" content="Discover all ClawPal features - natural language crypto trading, smart swap routing, non-custodial security, and lightning-fast execution." />
+  <title>Features | Pal Claw - AI-Powered Crypto Wallet</title>
+  <meta name="description" content="Discover all Pal Claw features - natural language crypto trading, smart swap routing, non-custodial security, and lightning-fast execution." />
 </svelte:head>
 
 <Navbar />
@@ -76,7 +76,7 @@
       badgeColor="primary"
       title="Everything You Need to "
       highlight="Dominate"
-      description="We built ClawPal for degens, by degens. Every feature is designed to make your crypto life easier, faster, and more profitable. No cap."
+      description="We built Pal Claw for degens, by degens. Every feature is designed to make your crypto life easier, faster, and more profitable. No cap."
     />
 
     <!-- Main Features -->

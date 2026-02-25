@@ -55,8 +55,8 @@
 </script>
 
 <svelte:head>
-  <title>Status | ClawPal - System Status & Uptime</title>
-  <meta name="description" content="ClawPal system status. Check real-time availability of all services and historical uptime data." />
+  <title>Status | Pal Claw - System Status & Uptime</title>
+  <meta name="description" content="Pal Claw system status. Check real-time availability of all services and historical uptime data." />
 </svelte:head>
 
 <Navbar />
@@ -70,7 +70,7 @@
       badgeColor="primary"
       title="All Systems "
       highlight="Operational"
-      description="Real-time status of all ClawPal services. We aim for 99.9% uptime because your bags don't wait."
+      description="Real-time status of all Pal Claw services. We aim for 99.9% uptime because your bags don't wait."
     />
 
     <!-- Overall Status -->

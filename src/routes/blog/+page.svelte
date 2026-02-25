@@ -12,8 +12,8 @@
   });
 
   const featuredPost = {
-    title: 'Why We Built ClawPal: A Degen\'s Manifesto',
-    excerpt: 'We got tired of the same old crypto UX. Click here, confirm there, wait forever, pray it works. So we said "nah" and built something better. This is the story of how ClawPal came to be, and why we think natural language is the future of crypto interactions.',
+    title: 'Why We Built Pal Claw: A Degen\'s Manifesto',
+    excerpt: 'We got tired of the same old crypto UX. Click here, confirm there, wait forever, pray it works. So we said "nah" and built something better. This is the story of how Pal Claw came to be, and why we think natural language is the future of crypto interactions.',
     date: 'Feb 18, 2025',
     readTime: '8 min read',
     category: 'Company',
@@ -46,7 +46,7 @@
       icon: Lightbulb
     },
     {
-      title: 'ClawPal v0.5: Priority Execution is Here',
+      title: 'Pal Claw v0.5: Priority Execution is Here',
       excerpt: 'Big update dropping. Premium users now get priority RPC endpoints. What this means for your trades and why it matters.',
       date: 'Feb 5, 2025',
       readTime: '4 min read',
@@ -82,8 +82,8 @@
 </script>
 
 <svelte:head>
-  <title>Blog | ClawPal - Crypto Insights, Updates & Degen Takes</title>
-  <meta name="description" content="The ClawPal blog. Product updates, crypto insights, and real talk about building in web3. No marketing fluff, just vibes." />
+  <title>Blog | Pal Claw - Crypto Insights, Updates & Degen Takes</title>
+  <meta name="description" content="The Pal Claw blog. Product updates, crypto insights, and real talk about building in web3. No marketing fluff, just vibes." />
 </svelte:head>
 
 <Navbar />

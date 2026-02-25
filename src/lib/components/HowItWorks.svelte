@@ -81,7 +81,7 @@
           three steps. <span class="gradient-text-purple">that's it.</span>
         </h2>
         <p class="text-text-secondary text-lg">
-          no tutorials needed. if you can text, you can use clawpal.
+          no tutorials needed. if you can text, you can use palclaw.
         </p>
       </div>
     </div>
@@ -186,7 +186,7 @@
                   🐾
                 </div>
                 <div>
-                  <p class="text-text-primary font-semibold text-sm">clawpal</p>
+                  <p class="text-text-primary font-semibold text-sm">palclaw</p>
                   <div class="flex items-center gap-1.5">
                     <div class="w-1.5 h-1.5 bg-accent-primary rounded-full"></div>
                     <span class="text-text-muted text-xs">online</span>

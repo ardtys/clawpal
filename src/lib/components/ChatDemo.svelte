@@ -217,13 +217,13 @@
                 <div class="relative">
                   <img
                     src="/clawpal-logo.png"
-                    alt="ClawPal"
+                    alt="Pal Claw"
                     class="w-10 h-10 rounded-full"
                   />
                   <div class="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-accent-primary rounded-full border-2 border-bg-card"></div>
                 </div>
                 <div>
-                  <p class="text-text-primary font-semibold">ClawPal Assistant</p>
+                  <p class="text-text-primary font-semibold">Pal Claw Assistant</p>
                   <div class="flex items-center gap-2">
                     <div class="w-1.5 h-1.5 bg-accent-primary rounded-full animate-pulse"></div>
                     <p class="text-text-muted text-xs">Online</p>

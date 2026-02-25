@@ -23,7 +23,7 @@
       method: 'POST',
       path: '/api/v1/chat',
       description: 'Send a natural language message and get a structured response with actions',
-      example: `fetch('https://api.clawpal.io/v1/chat', {
+      example: `fetch('https://api.palclaw.io/v1/chat', {
   method: 'POST',
   headers: {
     'Authorization': 'Bearer YOUR_API_KEY',
@@ -40,7 +40,7 @@
       method: 'GET',
       path: '/api/v1/balance',
       description: 'Get token balances for a wallet address',
-      example: `fetch('https://api.clawpal.io/v1/balance?wallet=YOUR_WALLET&chain=solana', {
+      example: `fetch('https://api.palclaw.io/v1/balance?wallet=YOUR_WALLET&chain=solana', {
   headers: {
     'Authorization': 'Bearer YOUR_API_KEY'
   }
@@ -50,7 +50,7 @@
       method: 'POST',
       path: '/api/v1/swap/quote',
       description: 'Get a swap quote with the best available route',
-      example: `fetch('https://api.clawpal.io/v1/swap/quote', {
+      example: `fetch('https://api.palclaw.io/v1/swap/quote', {
   method: 'POST',
   headers: {
     'Authorization': 'Bearer YOUR_API_KEY',
@@ -68,7 +68,7 @@
       method: 'POST',
       path: '/api/v1/swap/execute',
       description: 'Build a swap transaction ready for signing',
-      example: `fetch('https://api.clawpal.io/v1/swap/execute', {
+      example: `fetch('https://api.palclaw.io/v1/swap/execute', {
   method: 'POST',
   headers: {
     'Authorization': 'Bearer YOUR_API_KEY',
@@ -97,8 +97,8 @@
 </script>
 
 <svelte:head>
-  <title>API Reference | ClawPal - Build with Our API</title>
-  <meta name="description" content="ClawPal API documentation. Integrate natural language crypto operations into your apps, bots, and workflows." />
+  <title>API Reference | Pal Claw - Build with Our API</title>
+  <meta name="description" content="Pal Claw API documentation. Integrate natural language crypto operations into your apps, bots, and workflows." />
 </svelte:head>
 
 <Navbar />
@@ -112,7 +112,7 @@
       badgeColor="warning"
       title="Build Something "
       highlight="Fire"
-      description="Integrate ClawPal's natural language processing into your own apps. Perfect for trading bots, dashboards, and custom tools. Let's get you building."
+      description="Integrate Pal Claw's natural language processing into your own apps. Perfect for trading bots, dashboards, and custom tools. Let's get you building."
     />
 
     <!-- API Key Notice -->
@@ -127,7 +127,7 @@
         <div>
           <h3 class="font-heading font-semibold text-text-primary mb-1">API Access is Whale Tier Only</h3>
           <p class="text-text-secondary text-sm">
-            Real talk - API access is only available on the Whale tier ($99/mo). This ain't for casual users, it's for builders who are serious about integrating ClawPal into their stack. If that's you, let's go.
+            Real talk - API access is only available on the Whale tier ($99/mo). This ain't for casual users, it's for builders who are serious about integrating Pal Claw into their stack. If that's you, let's go.
           </p>
         </div>
       </div>
@@ -158,9 +158,9 @@
     >
       <h3 class="font-heading font-semibold text-text-primary mb-3">Base URL</h3>
       <div class="flex items-center gap-3 bg-bg-secondary rounded-lg p-4">
-        <code class="font-mono text-accent-primary flex-1">https://api.clawpal.io/v1</code>
+        <code class="font-mono text-accent-primary flex-1">https://api.palclaw.io/v1</code>
         <button
-          onclick={() => copyCode(-1, 'https://api.clawpal.io/v1')}
+          onclick={() => copyCode(-1, 'https://api.palclaw.io/v1')}
           class="p-2 hover:bg-bg-card rounded transition-colors"
         >
           {#if copiedIndex === -1}
@@ -255,7 +255,7 @@
         Ready to Start Building?
       </h2>
       <p class="text-text-secondary mb-8 max-w-xl mx-auto">
-        Get your API key and start integrating ClawPal into your project. Hit us up if you're building something cool - we love seeing what the community creates.
+        Get your API key and start integrating Pal Claw into your project. Hit us up if you're building something cool - we love seeing what the community creates.
       </p>
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
         <a href="/#pricing" class="btn-primary flex items-center gap-2">

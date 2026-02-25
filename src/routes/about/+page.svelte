@@ -84,8 +84,8 @@
 </script>
 
 <svelte:head>
-  <title>About Us | ClawPal - Meet the Team Behind Your Crypto Bestie</title>
-  <meta name="description" content="Meet the team building ClawPal. We're degens who got tired of complex UIs and decided to fix crypto UX ourselves." />
+  <title>About Us | Pal Claw - Meet the Team Behind Your Crypto Bestie</title>
+  <meta name="description" content="Meet the team building Pal Claw. We're degens who got tired of complex UIs and decided to fix crypto UX ourselves." />
 </svelte:head>
 
 <Navbar />
